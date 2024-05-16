@@ -1,0 +1,308 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.5rem;
+  font-family: "Courier New", Courier, monospace;
+  color: black;
+  --dark-orange: rgb(255, 69, 1);
+  --ocra: rgb(226, 147, 0);
+  --dark-gray: rgb(75, 73, 73);
+  --light-blue: rgb(126, 199, 247);
+}
+
+a:link {
+  text-decoration: none;
+}
+
+#wrapper {
+  background-color: var(--dark-gray);
+  padding: 9rem 3rem 3rem 3rem;
+}
+
+/* nav alkaa */
+
+nav {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: black;
+  color: orange;
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 70%;
+}
+
+nav a {
+  color: white;
+}
+
+/* portfolio alkaa */
+
+#portfolio {
+  background-image: url(./images/forest-lightray.jpeg);
+  background-size: cover;
+  padding: 7rem;
+}
+
+#portfolio ol {
+  list-style: decimal;
+  padding: 1rem 3rem;
+  color: white;
+}
+
+#portfolio h1 {
+  font-size: 2.5rem;
+
+  padding: 1rem 0;
+  color: var(--dark-orange);
+}
+
+h2 {
+  font-size: 2rem;
+  padding: 1rem 0;
+  color: var(--dark-orange);
+}
+
+#portfolio ol li {
+  padding: 0.5rem;
+}
+
+#portfolio a {
+  color: var(--ocra);
+}
+
+#portfolio a:hover {
+  text-decoration: underline;
+}
+
+#portfolio div {
+  padding: 3rem;
+  background-color: rgba(75, 73, 73, 0.7);
+}
+
+/* main alkaa */
+
+/* menneisyys alkaa */
+
+#menneisyys {
+  background-color: lightgrey;
+  padding: 1rem;
+}
+
+#menneisyys h2 {
+  color: black;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.card {
+  border: solid 1px var(--dark-gray);
+  padding: 1rem 1rem 2rem 1rem;
+  margin: 1rem;
+  border-radius: 10px;
+  background-color: rgb(223, 223, 223);
+}
+
+#menneisyys a {
+  color: var(--ocra);
+}
+
+#menneisyys p {
+  padding-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.7rem;
+  font-weight: bold;
+  padding: 1rem 0;
+}
+
+#menneisyys img {
+  width: 100%;
+}
+
+#folder {
+  display: flex;
+  flex-direction: row;
+}
+
+/* nykyisyys alkaa */
+
+#nykyisyys {
+  margin-top: 2rem;
+  border-top: 1px solid var(--light-blue);
+  padding: 1rem 0;
+  color: white;
+}
+
+#nykyisyys img {
+  width: 100%;
+}
+
+#nykyisyys figure {
+  width: 30%;
+  padding-left: 2rem;
+}
+
+#nykyisyys p {
+  width: 70%;
+}
+
+.n-wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  padding-top: 1rem;
+}
+
+/* tulevaisuus alkaa*/
+
+#tulevaisuus {
+  margin-top: 2rem;
+  border-top: 1px solid var(--light-blue);
+  padding: 1rem 0;
+  color: white;
+}
+
+#tulevaisuus img {
+  width: 100%;
+}
+
+#tulevaisuus figure {
+  width: 30%;
+  padding-right: 2rem;
+}
+
+#tulevaisuus p {
+  width: 70%;
+}
+
+.t-wrapper {
+  display: flex;
+  flex-direction: row;
+  padding-top: 1rem;
+}
+
+/* yhteystiedot alkaa */
+
+#yhteystiedot {
+  margin-top: 2rem;
+  border-top: 1px solid var(--light-blue);
+  padding: 1rem 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#forms {
+  width: 100%;
+  padding-bottom: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+label {
+  width: 30%;
+  color: white;
+  font-size: 1rem;
+}
+input {
+  width: 50%;
+  margin: 1rem;
+}
+
+button {
+  background-color: var(--ocra);
+  border-radius: 5px;
+  padding: 0.5rem;
+  border: none;
+  color: white;
+}
+
+/* footer lakaa */
+
+footer {
+  border-top: 1px solid white;
+  margin-top: 2rem;
+  padding: 1rem 0;
+  color: white;
+}
+
+@media only screen and (max-width: 425px) {
+  nav {
+    text-align: end;
+    padding-bottom: 1rem;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    column-count: 2;
+    width: 80%;
+  }
+
+  nav ul li {
+    padding: 0 1.5rem 1rem 1.5rem;
+  }
+
+  #wrapper {
+    padding: 10rem 2rem 2rem 2rem;
+  }
+
+  #portfolio {
+    padding: 2rem;
+  }
+
+  #portfolio div {
+    padding: 1rem;
+  }
+
+  .n-wrapper {
+    flex-wrap: wrap;
+  }
+
+  #nykyisyys figure {
+    width: 100%;
+    padding: 0 0 1rem 0;
+  }
+
+  #nykyisyys p {
+    width: 100%;
+  }
+
+  .t-wrapper {
+    flex-wrap: wrap;
+  }
+
+  #tulevaisuus figure {
+    width: 100%;
+    padding: 0 0 1rem 0;
+  }
+
+  #tulevaisuus p {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  nav ul {
+    width: 100%;
+  }
+
+  #folder {
+    flex-wrap: wrap;
+  }
+}
